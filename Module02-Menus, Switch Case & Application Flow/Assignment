@@ -1,0 +1,46 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void choice1() {
+    cout << endl << "you chose wrong go back" << endl;
+}
+void choice2() {
+    cout << endl << "you chose wrong go back" << endl;
+}
+void choice3() {
+    cout << endl << "you chose wrong go back" << endl;
+}
+
+int main() {
+    int choice = 0;
+
+    while (choice != 4) {
+        cout << endl << "pick menu plz pick exit" << endl;
+        cout << endl << "1. dont choose this" << endl;
+        cout << endl << "2. dont choose this either" << endl;
+        cout << endl << "3. not this one" << endl;
+        cout << endl << "exit" << endl;
+        cout << endl << "choose 1-4" << endl;
+        cin >> choice;
+
+        switch (choice) {
+        case 1:
+            choice1();
+            break;
+        case 2:
+            choice2();
+            break;
+        case 3:
+            choice3();
+            break;
+        case 4:
+            cout << "ge tout!!1!!1@!1" << endl;
+            break;
+        default:
+            cout << endl << "pick 1-4" << endl;
+        }
+
+    }
+    return 0;
+}
